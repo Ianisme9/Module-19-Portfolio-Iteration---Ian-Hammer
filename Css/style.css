@@ -1,0 +1,101 @@
+nav {
+    width: 73%;
+    padding: 1%;
+}
+
+footer {
+    background-color: #373738;
+    padding: auto;
+}
+
+img {
+    max-height: 500px;
+}
+
+.listomon {
+    width: 50%;
+    margin-left: auto;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.flexGroup {
+    width: 33%;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas: "modestNeedsImage modestNeedsText" "dhsImage dhsText";
+    align-content: center;
+    text-align: center;
+}
+
+.modestNeedsImage {
+    /* background-image: url("/Images/placeholder\ image.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+    grid-area: modestNeedsImage;
+}
+
+.modestNeedsText {
+    grid-area: modestNeedsText;
+}
+
+.dhsImage {
+    /* background-image: url("/Images/placeholder\ image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;   */
+    grid-area: dhsImage;
+}
+
+.dhsText {
+    grid-area: dhsText;
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        max-height: 350px;
+    }
+    .flexContainer {
+        flex-direction: column;
+    }
+    .flexGroup {
+        width: 100%;
+    }
+    .workGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 500px 500px 500px;
+        grid-template-areas: "modestNeedsImage" "modestNeedsText" "dhsImage" "dhsText";
+    }
+}
